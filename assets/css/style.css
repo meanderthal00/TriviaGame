@@ -9,8 +9,15 @@ body {
 }
 .panel {
     background-color: transparent;
+    border-color: transparent;
+}    
+/* #timerDisplay {
+    font-size: 24px;
+    font-style: bold;
 
-}
+}     */
+
+
 .jumbotron {
     background-color: transparent;
     /* background-size: cover; */
