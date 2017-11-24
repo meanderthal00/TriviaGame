@@ -4,6 +4,14 @@ header {
 }
 
 body {
-    background-image: url("../imges/dinnerPlate.png");
+    background-image: url("../images/dinnerPlate.png");
+    background-size: cover;
+}
+.panel {
+    background-color: grey;
 
+}
+.jumbotron {
+    background-image: url("..images/plate.jpeg");
+    background-size: cover;
 }
