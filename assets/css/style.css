@@ -1,5 +1,5 @@
 header {
-    background-color: gray;
+    
     text-align: center;
 }
 
@@ -8,10 +8,10 @@ body {
     background-size: cover;
 }
 .panel {
-    background-color: grey;
+    background-color: transparent;
 
 }
 .jumbotron {
-    background-image: url("..images/plate.jpeg");
-    background-size: cover;
+    background-color: transparent;
+    /* background-size: cover; */
 }
