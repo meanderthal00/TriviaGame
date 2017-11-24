@@ -3,9 +3,46 @@ $(document).ready(function(){
 console.log('hi!');
 // ARRAYS
     // questions (5-7)
-    // answers (4 for each question, one correct and 3 bluffs)
+    var questionArray =[{
+        "Question":"If you order 'Escamole' tacos while in Mexico what will your server bring you?",
+        "A":"Tacos smothered in a tangy sauce",
+        "B":"Tacos filled with ant larve",
+        "C":"Tacos made with fish eggs",
+        "D":"Tacos filled with fermented cactus paddles",
+        "Answer":"B"
+    }, {
+        "Question":"What does the Ukranian dish 'Salo' consist of?",
+        "A":"Beets and sour cream",
+        "B":"Chicken stuffed with dried fish",
+        "C":"Beef and pork patties swimming in vinegar",
+        "D":"Aged slabs of sliced on rye bread",
+        "Answer":"D"
+    }, {
+        "Question": "What is the secret ingredient in the Korean dish 'Boshitang'?",
+        "A":"Lots of Kimchi",
+        "B":"The eye of a young cow",
+        "C":"The meat of a small dog",
+        "D":"The mold from old soy beans",
+        "Answer":"C"
+    }, {
+        "Question": "What surprising part of the Moose do the Canadians turn into a jelly?",
+        "A":"The knuckle.",
+        "B":"The antlers",
+        "C":"The nose",
+        "D":"The heart",
+        "Answer":"C"
+    }, {
+        "Question":"What insect first eaten under duress has become a staple in the diet of many Cambodians?",
+        "A":"Deep-fried tarantulas",
+        "B":"Smoked horse-flies",
+        "C":"Roasted Grasshoppers",
+        "D":"Fried earth-worms",
+        "Answer":"A"
+    }];
+    // answers (4 for each question, one correct and 3 bluffs or T/F)
 
 // need a start button for game
+    // like to put this in the questionDisplay initially
 // question is displayed
 // timer starts
 // answers are displayed
@@ -25,7 +62,7 @@ console.log('hi!');
 // AT END
     // number of right/wrong are displayed maybe a message based on performance.
 
-    // option to restart the game is given
+    // option to restart the game is given this should go in the question display area
         // AT RESET
         // totals reset to 0
         // questions are reloaded
