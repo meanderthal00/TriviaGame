@@ -4,54 +4,53 @@ console.log('hi!');
 // ARRAYS
     // questions (5-7)  
       // answers (4 for each question, one correct and 3 bluffs)
-    var questionArray =[{
-        "question1":"If you order 'Escamole' tacos while in Mexico what will your server bring you?",
-        "choices":[
+    var questionArray =[
+        "If you order 'Escamole' tacos while in Mexico what will your server bring you?",
         "Tacos smothered in a tangy sauce",
         "Tacos filled with ant larve",
         "Tacos made with fish eggs",
-        "Tacos filled with fermented cactus paddles"],
-        "correctAnswer":1
+        "Tacos filled with fermented cactus paddles",
+        1]
          
         // [1]
-    }, {
-        question2:"What does the Ukranian dish 'Salo' consist of?",
-        choices:[
-        "Beets and sour cream",
-        "Chicken stuffed with dried fish",
-        "Beef and pork patties swimming in vinegar",
-        "Aged slabs of sliced on rye bread"],
-        correctAnswer: 3
-        // [3]
-    }, {
-        question3: "What is the secret ingredient in the Korean dish 'Boshitang'?",
-        choices:[
-        "Lots of Kimchi",
-        "The eye of a young cow",
-        "The meat of a small dog",
-        "The mold from old soy beans"],
-        correctAnswer: 2
-        // [2]
+    // }, {
+    //     question2:"What does the Ukranian dish 'Salo' consist of?",
+    //     choices:[
+    //     "Beets and sour cream",
+    //     "Chicken stuffed with dried fish",
+    //     "Beef and pork patties swimming in vinegar",
+    //     "Aged slabs of sliced on rye bread"],
+    //     correctAnswer: 3
+    //     // [3]
+    // }, {
+    //     question3: "What is the secret ingredient in the Korean dish 'Boshitang'?",
+    //     choices:[
+    //     "Lots of Kimchi",
+    //     "The eye of a young cow",
+    //     "The meat of a small dog",
+    //     "The mold from old soy beans"],
+    //     correctAnswer: 2
+    //     // [2]
 
-    }, {
-        question4: "What surprising part of the Moose do the Canadians turn into a jelly?",
-        choices:[
-        "The 'knuckle'.",
-        "The antlers",
-        "The nose",
-        "The heart"],
-        correctAnswer: 2
-        // [2]
-    }, {
-        question5:"What insect first eaten under duress, has become a staple in the diet of many Cambodians?",
-        choices:[
-        "Deep-fried tarantulas",
-        "Smoked horse-flies",
-        "Roasted Grasshoppers",
-        "Grilled earth-worms"],
-        correctAnswer: 0
-        // [0]
-    }];
+    // }, {
+    //     question4: "What surprising part of the Moose do the Canadians turn into a jelly?",
+    //     choices:[
+    //     "The 'knuckle'.",
+    //     "The antlers",
+    //     "The nose",
+    //     "The heart"],
+    //     correctAnswer: 2
+    //     // [2]
+    // }, {
+    //     question5:"What insect first eaten under duress, has become a staple in the diet of many Cambodians?",
+    //     choices:[
+    //     "Deep-fried tarantulas",
+    //     "Smoked horse-flies",
+    //     "Roasted Grasshoppers",
+    //     "Grilled earth-worms"],
+    //     correctAnswer: 0
+    //     // [0]
+    // }];
 
 
     // $("#questionDisplay").replaceWith(questionArray.question)
@@ -63,7 +62,7 @@ console.log('hi!');
     // console.log(questionArray[0]);
 
     $("#questionDisplay").html(questionArray [0]);
-    $("#button1").html(questionArray.choices);
+    $("#button1").html(questionArray [1]);
 
 
     // document.getElementById("questionDisplay").innerHTML =questionArray[0];
@@ -108,6 +107,7 @@ console.log('hi!');
         }
         document.getElementById("timerDisplay").innerHTML=count + " secs";
     }
+    // start the timer function refrence wk5 act 10 line 38
 
 });
         
