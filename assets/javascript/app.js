@@ -5,17 +5,17 @@ console.log('hi!');
     // questions (5-7)  
       // answers (4 for each question, one correct and 3 bluffs)
     var questionArray =[{
-        question:"If you order 'Escamole' tacos while in Mexico what will your server bring you?",
-        choices:[
+        "question1":"If you order 'Escamole' tacos while in Mexico what will your server bring you?",
+        "choices":[
         "Tacos smothered in a tangy sauce",
         "Tacos filled with ant larve",
         "Tacos made with fish eggs",
         "Tacos filled with fermented cactus paddles"],
-        correctAnswer:1
+        "correctAnswer":1
          
         // [1]
     }, {
-        question:"What does the Ukranian dish 'Salo' consist of?",
+        question2:"What does the Ukranian dish 'Salo' consist of?",
         choices:[
         "Beets and sour cream",
         "Chicken stuffed with dried fish",
@@ -24,7 +24,7 @@ console.log('hi!');
         correctAnswer: 3
         // [3]
     }, {
-        question: "What is the secret ingredient in the Korean dish 'Boshitang'?",
+        question3: "What is the secret ingredient in the Korean dish 'Boshitang'?",
         choices:[
         "Lots of Kimchi",
         "The eye of a young cow",
@@ -34,7 +34,7 @@ console.log('hi!');
         // [2]
 
     }, {
-        question: "What surprising part of the Moose do the Canadians turn into a jelly?",
+        question4: "What surprising part of the Moose do the Canadians turn into a jelly?",
         choices:[
         "The 'knuckle'.",
         "The antlers",
@@ -43,7 +43,7 @@ console.log('hi!');
         correctAnswer: 2
         // [2]
     }, {
-        question:"What insect first eaten under duress, has become a staple in the diet of many Cambodians?",
+        question5:"What insect first eaten under duress, has become a staple in the diet of many Cambodians?",
         choices:[
         "Deep-fried tarantulas",
         "Smoked horse-flies",
@@ -54,16 +54,19 @@ console.log('hi!');
     }];
 
 
-    $("#questionDisplay").replaceWith(questionArray.question)
-    $.each(questionArray, function (index, value){
-        console.log(value);
-    })
+    // $("#questionDisplay").replaceWith(questionArray.question)
+    // $.each(questionArray, function (index, value){
+    //     console.log(value);
+    // });
 
-    // for (i=0; i < questionArray.length; i++ ){
-    //     for (j=0; j <questionArray [i].length; j++){
-    //         console.log(questionArray [i] [j] [0] + " is a " + questionArray [i] );
-    //     }
-    // }
+    // $("#questionDisplay").html("<b>" + questionArray[0]+ "</b>" );
+    // console.log(questionArray[0]);
+
+    $("#questionDisplay").html(questionArray [0]);
+    $("#button1").html(questionArray.choices);
+
+
+    // document.getElementById("questionDisplay").innerHTML =questionArray[0];
     // need a start button for game
         // like to put this in the questionDisplay initially
     // question is displayed
