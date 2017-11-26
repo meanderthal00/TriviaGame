@@ -54,10 +54,10 @@ console.log('hi!');
     }];
 
 
-    // $("#questionDisplay").replaceWith(questionArray)
-    // $.each(questionArray, function (index, value){
-    //     console.log(value);
-    // })
+    $("#questionDisplay").replaceWith(questionArray.question)
+    $.each(questionArray, function (index, value){
+        console.log(value);
+    })
 
     // for (i=0; i < questionArray.length; i++ ){
     //     for (j=0; j <questionArray [i].length; j++){
