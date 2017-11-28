@@ -7,7 +7,7 @@
    
 
 
-    // $("#questionDisplay").replaceWith(questionArray.question)
+    // $("#questionDisplay").replaceWith(questionArray[counter].question)
     // $.each(questionArray, function (index, value){
     //     console.log(value);
     // });
@@ -21,9 +21,10 @@
     // $("#button").html(questionArray.question1.choices1[1]);
     // $("#button1").html(questionArray.question1.choices1[2]);
     // $("#button1").html(questionArray.question1.choices1[3]);
+    
+//  document.getElementById("questionDisplay").innerHTML =questionArray[0];
 
-
-    // document.getElementById("questionDisplay").innerHTML =questionArray[0];
+   
 
 
     // need a start button for game
@@ -54,45 +55,35 @@
     // timer resets
 
     // creating the count down timer.
-    // var count = 16;
-    // var intervalId;
+    var count = 16;
+    
 
-    // var counter = setInterval(1000);
-    // var counterRun = false;
+     var counter = setInterval(1000);
+      function timer () {
+                    count = count - 1;
+                    if (count <= -1) {
+                        clearInterval(counter);
+                        return;
+                    }
+            document.getElementById("timerDisplay").innerHTML = count + " secs";
+        }
 
-    // var gameTimer = {
-    //     timer: function () {
-    //                 count = count - 1;
-    //                 if (count <= -1) {
-    //                     clearInterval(counter);
-    //                     return;
-    //                 }
-    //         document.getElementById("timerDisplay").innerHTML = count + " secs";
-    //     },
-
-    //     start: function () {
-    //         if (!counterRun) {
-    //             intervalId = setInterval(gameTimer.timer, 1000);
-    //                 counterRun = true;
-    //         }
-    //     },
+        function start () {
+            if (!counterRun) {
+                intervalId = setInterval(gameTimer.timer, 1000);
+                    counterRun = true;
+            }
+        }
 
 
        
         // start the timer function refrence wk5 act 10 line 38
         
-//     }
-// });
+    
 
 
-var counter = 0;
-$(document).on("click", "#start", function(){
-    console.log("HELLO");
-    counter++;
-    $("#questionDisplay").html(questionArray[0].question);
-    // $("#answerDisplay").append(questionArray.choicesArray);
-    //  console.log(questionArray.choicesArray);
-})
+
+
      questionArray = [{
         question1: {
             question:
@@ -175,7 +166,19 @@ $(document).on("click", "#start", function(){
             }
         }
 ];
+var counter = 0;
+$(document).on("click", "#start", function(){
+    console.log("HELLO");
+    counter++;
+    $("#questionDisplay").html(questionArray[counter].question);
+    for (var i = 1; i < questionArray[counter].choicesArray.length; i++){
 
+        var variableString = "<button class='btn btn-secondary answerList" + i + "'>" + questionArray[counter].choicesArray[i] + "</button>";
+
+        $(".answersList").append(variableString)
+    }
+
+})
 for (var i =0; i < questionArray[counter].length; i++){
     $("#answerDisplay").append("<button + i +'"> + questionArray[counter].choicesArray +"</button>");
         var variableString ="<button + i +'"> + questionArray[counter].choicesArray +"</button>";
