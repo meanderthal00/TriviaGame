@@ -1,6 +1,6 @@
-$(document).ready(function () {
+// $(document).ready(function () {
     // making sure my JS is linked to html
-    // console.log('hi!');
+    
     // ARRAYS
     // questions (5-7)  
     // answers (4 for each question, one correct and 3 bluffs)
@@ -54,43 +54,45 @@ $(document).ready(function () {
     // timer resets
 
     // creating the count down timer.
-    var count = 16;
-    var intervalId;
+    // var count = 16;
+    // var intervalId;
 
-    var counter = setInterval(1000);
-    var counterRun = false;
+    // var counter = setInterval(1000);
+    // var counterRun = false;
 
-    var gameTimer = {
-        timer: function () {
-                    count = count - 1;
-                    if (count <= -1) {
-                        clearInterval(counter);
-                        return;
-                    }
-            document.getElementById("timerDisplay").innerHTML = count + " secs";
-        },
+    // var gameTimer = {
+    //     timer: function () {
+    //                 count = count - 1;
+    //                 if (count <= -1) {
+    //                     clearInterval(counter);
+    //                     return;
+    //                 }
+    //         document.getElementById("timerDisplay").innerHTML = count + " secs";
+    //     },
 
-        start: function () {
-            if (!counterRun) {
-                intervalId = setInterval(gameTimer.timer, 1000);
-                    counterRun = true;
-            }
-        },
+    //     start: function () {
+    //         if (!counterRun) {
+    //             intervalId = setInterval(gameTimer.timer, 1000);
+    //                 counterRun = true;
+    //         }
+    //     },
 
 
        
         // start the timer function refrence wk5 act 10 line 38
         
-    }
-});
+//     }
+// });
 
 
 var counter = 0;
 $(document).on("click", "#start", function(){
     console.log("HELLO");
-    counter ++;
-    $("#questionDisplay").html(questionArray[counter].question);
-},
+    counter++;
+    $("#questionDisplay").html(questionArray[0].question);
+    // $("#answerDisplay").append(questionArray.choicesArray);
+    //  console.log(questionArray.choicesArray);
+})
      questionArray = [{
         question1: {
             question:
@@ -172,4 +174,9 @@ $(document).on("click", "#start", function(){
                             // [0]
             }
         }
-]);
+];
+
+for (var i =0; i < questionArray[counter].length; i++){
+    $("#answerDisplay").append("<button + i +'"> + questionArray[counter].choicesArray +"</button>");
+        var variableString ="<button + i +'"> + questionArray[counter].choicesArray +"</button>";
+}
